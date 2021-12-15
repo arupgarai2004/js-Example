@@ -18,3 +18,4 @@ const persons = [
 ];
 const outputMap=persons.map((item)=>[item.firstname,item.lastname].join(" "));
 console.log(outputMap);
+
