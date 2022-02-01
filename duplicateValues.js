@@ -8,3 +8,10 @@ for (var i = 0; i < z.length; i++) {
 }
 
 console.log('DuplicateValue: Unique value array is =>', a);
+
+uniqueArray = z.filter(function (item, pos) {
+  //console.log(item, pos,z.indexOf(item));
+  return z.indexOf(item) == pos;
+});
+//uniqueArray = z.filter((item, pos) => z.indexOf(item) == pos)
+console.log('Unique value array using filter =>', uniqueArray);

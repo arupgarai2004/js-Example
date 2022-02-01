@@ -17,6 +17,7 @@ const persons = [
   { firstname: 'Malcom', lastname: 'Reynolds' },
   { firstname: 'Kaylee', lastname: 'Frye' },
   { firstname: 'Jayne', lastname: 'Cobb' },
+  { firstname: 'Malcom', lastname: 'Cobb' },
 ];
 const outputMap = persons.map((item) =>
   [item.firstname, item.lastname].join(' ')
@@ -31,8 +32,11 @@ const words = [
   'destruction',
   'present',
 ];
-const resultFilter = words.filter((word) => word.length > 6);
-console.log("Filter function output=>",resultFilter);
+const resultFilter = persons.filter((item) =>item.firstname == 'Malcom');
+console.log("Filter function output for person=>",resultFilter);
+
+const resultpersonsFilter = words.filter((word) => word.length > 4);
+console.log("Filter function output=>",resultpersonsFilter);
 
 const maxOutput = arr.reduce(function (max, cur) {
   if (cur > max) {
