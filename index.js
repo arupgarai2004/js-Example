@@ -3,14 +3,16 @@ import './style.css';
 
 import './callBindApply.js';
 import './duplicateValues.js';
-import './jsclosures.js'
+import './jsclosures.js';
+import './jsSorting.js';
+
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 const arr = [4, 3, 5, 17, 9, 2];
 const output = arr.map((x) => x * 2); // const output=arr.map((x)=>x*2);
-console.log("Using map multiple by 2 with each value",output);
+console.log('Using map multiple by 2 with each value', output);
 
 //array map example
 const persons = [
@@ -22,7 +24,7 @@ const persons = [
 const outputMap = persons.map((item) =>
   [item.firstname, item.lastname].join(' ')
 );
-console.log("Map function output=>",outputMap);
+console.log('Map function output=>', outputMap);
 
 const words = [
   'spray',
@@ -32,11 +34,11 @@ const words = [
   'destruction',
   'present',
 ];
-const resultFilter = persons.filter((item) =>item.firstname == 'Malcom');
-console.log("Filter function output for person=>",resultFilter);
+const resultFilter = persons.filter((item) => item.firstname == 'Malcom');
+console.log('Filter function output for person=>', resultFilter);
 
 const resultpersonsFilter = words.filter((word) => word.length > 4);
-console.log("Filter function output=>",resultpersonsFilter);
+console.log('Filter function output=>', resultpersonsFilter);
 
 const maxOutput = arr.reduce(function (max, cur) {
   if (cur > max) {
