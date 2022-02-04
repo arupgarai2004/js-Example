@@ -34,8 +34,11 @@ const words = [
   'destruction',
   'present',
 ];
-const resultFilter = persons.filter((item) => item.firstname == 'Malcom');
-console.log('Filter function output for person=>', resultFilter);
+const resultFilter = persons.filter((item) => item.firstname == 'Malcom').map((item) =>
+[item.firstname, item.lastname].join(' ')
+);
+console.log('Filter with map  output for person=>',resultFilter);
+
 
 const resultpersonsFilter = words.filter((word) => word.length > 4);
 console.log('Filter function output=>', resultpersonsFilter);
