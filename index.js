@@ -5,7 +5,7 @@ import './callBindApply.js';
 import './duplicateValues.js';
 import './jsclosures.js';
 import './jsSorting.js';
-
+import './promises.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
