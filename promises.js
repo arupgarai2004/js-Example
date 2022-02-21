@@ -25,6 +25,8 @@ data.then((value) => {
   return value.json();
 }).then((dataAray)=>{
   console.log(dataAray);
+}).catch(error=>{
+  console.log(error);
 })
 
 console.log('promise page End');
