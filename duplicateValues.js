@@ -24,4 +24,4 @@ var objectCount = z.reduce((acc, cur) => {
   }
   return acc;
 }, {});
-console.log(objectCount);
+console.log('number of elements eact values ', objectCount);
