@@ -7,6 +7,7 @@ import './jsclosures.js';
 import './jsSorting.js';
 import './promises.js';
 import './inheritance.js';
+import './currying.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
@@ -35,11 +36,10 @@ const words = [
   'destruction',
   'present',
 ];
-const resultFilter = persons.filter((item) => item.firstname == 'Malcom').map((item) =>
-[item.firstname, item.lastname].join(' ')
-);
-console.log('Filter with map  output for person=>',resultFilter);
-
+const resultFilter = persons
+  .filter((item) => item.firstname == 'Malcom')
+  .map((item) => [item.firstname, item.lastname].join(' '));
+console.log('Filter with map  output for person=>', resultFilter);
 
 const resultpersonsFilter = words.filter((word) => word.length > 4);
 console.log('Filter function output=>', resultpersonsFilter);
