@@ -10,7 +10,8 @@ const promise = new Promise((resolve, reject) => {
   }
 });
 
-promise.then((value) => {
+promise
+  .then((value) => {
     console.log(value);
   })
   .catch((message) => {
@@ -32,3 +33,14 @@ data
   });
 
 console.log('promise page End');
+var p1 = Promise.resolve(3);
+var p2 = 1337;
+var p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('foo');
+  }, 100);
+});
+
+Promise.all([p1, p2, p3]).then((values) => {
+  console.log('Promise all=.', values); // [3, 1337, "foo"]
+});
