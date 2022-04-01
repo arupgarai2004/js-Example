@@ -9,6 +9,7 @@ import './promises.js';
 import './inheritance.js';
 import './currying.js';
 import './pollyfils.js';
+import './prblmSolve.js';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
