@@ -9,4 +9,6 @@ console.log(o.m()); // 3
 // When calling o.m in this case, 'this' refers to o
 
 const p = Object.create(o);
-console.log('inheritance ', p.a); 
+p.a = 7;
+console.log('inheritance ', p.a);
+console.log('parent object value ', o.a);
