@@ -3,6 +3,7 @@ import './style.css';
 
 import './callBindApply.js';
 import './duplicateValues.js';
+import './flaten.js';
 import './jsclosures.js';
 import './jsSorting.js';
 import './promises.js';

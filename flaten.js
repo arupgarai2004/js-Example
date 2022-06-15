@@ -5,4 +5,5 @@ var zArray=[
   [23,6,8,9,10,[2,3,4],8]
 ];
 
-console.log([].concat(...zArray));
+console.log("concat...........",[].concat(...zArray)); 
+//console.log("Flat example1=>",[].flat(...zArray));   
